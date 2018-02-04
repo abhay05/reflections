@@ -1,0 +1,45 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    diff compare two files and show changed parts of old and new file -represent removed line and + represent added line.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    We can see the changes in the over time which is helpful in finding bugs if something is there which was not there 
+    earlier.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros:
+    Granularity is at committer's disposal.
+    We can decide when to commit like if you done something wrong you can check out, correct and then commit.
+
+    Cons:
+    If file is not saved automatically and the system stops suddenly then work done may be lost.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because in many files changes may be needed while changing a particular variable or value.
+
+* Git is more programming oriented, where several files tend to consist one logical group. On the other hand, Google Docs is primarily more targeted for documents created for human readings, in which case each single file consists a meaningful piece.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    First run the project and then enter command git log.These will show the history of commits in reverse chronological order i.e. last commit will come first.If you two files one old and other new then git diff can used for marking the differences between the commits(using commit id).
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    * You can try changing any critical features, since you can always revert back to the point when those were working correctly. If you find something is not working, you can git log, and try the previous versions untill you find the one which works, and make diff of the last one that worked correctly and the commit following it. That result would show where and how the bug was introduced.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    To start my projects.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	So that he can see the changes in older and newer files accordingly and find the bug.
